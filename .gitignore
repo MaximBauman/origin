@@ -1,0 +1,11 @@
+# folders ignore
+.vs/
+*tlog
+*.recipe
+*.ilk
+*.log
+*.obj
+*.idb
+*.pdb
+*.exe
+*.pdb
