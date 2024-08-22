@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{dda06da6-7c17-4488-b34d-9ca770731def}</ProjectGuid>
-    <RootNamespace>Taskcalculator</RootNamespace>
+    <ProjectGuid>{e9214fd8-8780-4107-ac9a-552c0219c6e8}</ProjectGuid>
+    <RootNamespace>TaskCalculator</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Task calculator.cpp" />
+    <ClCompile Include="TaskCalculator.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
