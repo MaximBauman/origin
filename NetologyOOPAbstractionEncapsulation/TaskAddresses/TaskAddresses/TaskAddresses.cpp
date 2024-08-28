@@ -32,6 +32,7 @@ int main() {
     std::ifstream inputFile("in.txt");
     std::ofstream outputFile("out.txt");
 
+
     if (!inputFile.is_open()) {
         std::cout << "Can't open file" << std::endl;
         return 1;
@@ -49,7 +50,7 @@ int main() {
         std::cout << "Can't open output file!" << std::endl;
         return 1;
     }
-
+    outputFile << rows << std::endl;
     for (int i = rows - 1; i >= 0; i--) { 
         outputFile << address[i].get_output_address() << std::endl;
     }
