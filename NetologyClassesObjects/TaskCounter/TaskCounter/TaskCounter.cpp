@@ -47,7 +47,28 @@ int main()
 	std::cin >> symbol;
 
 	while (!(symbol == 'x' || symbol == 'х')){
-		if (symbol == '+') {
+		switch (symbol)
+		{
+		case '+' :
+		{
+			counter.set_increment();
+			break;
+		}
+		case '-':
+		{
+			counter.set_decrement();
+			break;
+		}
+		case '=':
+		{
+			counter.get_actualValue();
+			break;
+		}
+		default:
+			std::cout << "Symbol is not correct!" << std::endl;
+			break;
+		}
+		/*if (symbol == '+') {
 			counter.set_increment();
 		}
 		else if (symbol == '-') {
@@ -55,7 +76,7 @@ int main()
 		}
 		else if (symbol == '=') {
 			counter.get_actualValue();
-		}
+		}*/
 			std::cout << "¬ведите команду ('+', '-', '=' или 'x'): ";
 			std::cin >> symbol;
 		};
