@@ -51,7 +51,7 @@ int main() {
         inputFile >> city >> street >> house >> apartment;
         address.emplace_back(city, street, house, apartment);
     }
-
+    // пузырьковая сортировка
     for (int i = 0; i < rows - 1; i++) {
         for (int j = 0; j < rows - i - 1; j++) {
             if (address[j].get_city() > address[j + 1].get_city()) {
