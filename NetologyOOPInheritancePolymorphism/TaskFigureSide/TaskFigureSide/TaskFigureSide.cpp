@@ -31,7 +31,7 @@ class Quadrangular : public Figure {
 public:
     Quadrangular() : Figure() {
         sideRange = 4;
-        name = "Четырёхугольник: ";
+        name = "Quadrangular: ";
     };
 };
 
@@ -46,7 +46,7 @@ int main()
     Triangle triangle;
     Quadrangular quadrangular;
 
-    std::cout << "Количество сторон:" << std::endl;
+    std::cout << "Side count:" << std::endl;
 
     figure.get_sides();
     triangle.get_sides();
