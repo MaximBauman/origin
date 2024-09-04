@@ -3,11 +3,9 @@
 class Figure
 {
 public:
-	Figure() {
-		char z = 0;
-	}
+	Figure(std::string name): name_(name) {}
 	virtual void print_info() {
-		std::cout << "Figure: " << std::endl;
+		std::cout << name_ << std::endl;
 		std::cout << (check() ? "coreccted" : "wrong") << std::endl;
 		std::cout << "Sides: 0" << std::endl;
 		std::cout << std::endl;
@@ -15,23 +13,26 @@ public:
 	virtual bool check() {
 		return true;
 	};
+	std::string get_name() const {
+		return name_;
+	}
 public:
-	virtual void set_name(std::string name) {};
 	~Figure() {};
+
+private:
+	std::string name_;
 };
 
 class Triangle : public Figure
 {
 public:
-	Triangle(int a, int b, int c, int A, int B, int C) : a{ a }, b{ b }, c{ c }, A{ A }, B{ B }, C{ C } {};
+	Triangle(int a, int b, int c, int A, int B, int C, std::string name) : Figure(name), a{ a }, b{ b }, c{ c }, A{ A }, B{ B }, C{ C } {};
 	~Triangle() {};
 
-	void set_name(std::string name) override {
-		this->name = name;
-	}
+
 
 	void print_info() override {
-		std::cout << name << std::endl;
+		std::cout << Figure::get_name() << std::endl;
 		std::cout << (check() ? "coreccted" : "wrong") << std::endl;
 		std::cout << "Sides count: 3" << std::endl;
 		std::cout << "Sides: a=" << a << " b=" << b << " c=" << c << std::endl;
@@ -47,21 +48,17 @@ public:
 	
 protected:
 	int a, b, c, A, B, C;
-	std::string name = "Triangle";
 };
 
 class Quadrangle : public Figure
 {
 public:
-	Quadrangle(int a, int b, int c, int d, int A, int B, int C, int D) : a{ a }, b{ b }, c{ c }, d{ d }, A{ A }, B{ B }, C{ C }, D{ D } {};
+	Quadrangle(int a, int b, int c, int d, int A, int B, int C, int D, std::string name) : Figure(name), a{ a }, b{ b }, c{ c }, d{ d }, A{ A }, B{ B }, C{ C }, D{ D } {};
 	~Quadrangle() {};
 
-	void set_name(std::string name) override {
-		this->name = name;
-	}
 
 	void print_info() override {
-		std::cout << name << std::endl;
+		std::cout << Figure::get_name() << std::endl;
 		std::cout << (check() ? "corrected":"wrong") << std::endl;
 		std::cout << "Sides count: 4" << std::endl;
 		std::cout << "Sides: a=" << a << " b=" << b << " c=" << c << "d=" << d << std::endl;
@@ -74,7 +71,6 @@ public:
 	}
 protected:
 	int a, b, c, d, A, B, C, D;
-	std::string name = "Quadrangle";
 };
 
 
@@ -82,105 +78,76 @@ protected:
 class RightTriangle : public Triangle
 {
 public:
-	RightTriangle(int a, int b, int c, int A, int B) : Triangle(a, b, c, A, B, 90) {
-		Triangle::set_name(name);
+	RightTriangle(int a, int b, int c, int A, int B) : Triangle(a, b, c, A, B, 90,"Right Triangle") {
 	};
 
 	bool check() override {
 		return Triangle::check() && (C == 90);
 	};
 	~RightTriangle() {};
-
-private:
-	std::string name = "Right triangle";
 };
 
 class IsoscelesTriangle : public Triangle
 {
 public:
-	IsoscelesTriangle(int a, int b, int A, int B ) : Triangle(a, b, a, A, B, A) {
-		Triangle::set_name(name);
-	};
+	IsoscelesTriangle(int a, int b, int A, int B ) : Triangle(a, b, a, A, B, A, "Isosceles Triangle") {};
 	bool check() override {
 		return Triangle::check() && (a != b && A != B);
 	};
 	~IsoscelesTriangle() {};
-
-private:
-	std::string name = "Isosceless Triangle";
 };
 
 class EquilateralTriangle : public Triangle {
 public: 
-	EquilateralTriangle(int a) :Triangle(a, a, a, 60, 60, 60) {
-		Triangle::set_name(name);
-	};
+	EquilateralTriangle(int a) :Triangle(a, a, a, 60, 60, 60, "Equilateral Triangle") {};
 	bool check() override {
 		return Triangle::check();
 	}
 	~EquilateralTriangle() {};
-private: 
-	std::string name = "Equilateral triangle";
 };
 
 class Rectangle : public Quadrangle
 {
 public:
-	Rectangle(int a, int b) : Quadrangle(a, b, a, b, 90, 90, 90, 90) {
-		Quadrangle::set_name(name);
-	};
+	Rectangle(int a, int b) : Quadrangle(a, b, a, b, 90, 90, 90, 90, "Rectangle") {};
 	bool check() override {
 		return Quadrangle::check() && (a != b);
 	}
 
 	~Rectangle() {};
-
-private:
-	std::string name = "Rectangle";
 };
 
 class Square : public Quadrangle
 {
 public:
-	Square(int a) : Quadrangle(a, a, a, a, 90, 90, 90, 90) {
-		Quadrangle::set_name(name);
-	};
+	Square(int a) : Quadrangle(a, a, a, a, 90, 90, 90, 90, "Square") {}
 	~Square() {};
 	bool check() override {
 		return Quadrangle::check();
 	}
-private:
-	std::string name = "Square";
 };
 
 class Parallelogram : public Quadrangle
 {
 public:
-	Parallelogram(int a, int b, int A, int B) : Quadrangle(a, b, a, b, A, B, A, B) {
-		Quadrangle::set_name(name);
-	};
+	Parallelogram(int a, int b, int A, int B) : Quadrangle(a, b, a, b, A, B, A, B, "Parallelogram") {};
 
 	bool check() override {
 		return Quadrangle::check() && ((a != b) && (A != B));
 	}
 	~Parallelogram() {};
-private:
-	std::string name = "Parallelogram";
+
 };
 
 class Rhombus : public Quadrangle
 {
 public:
-	Rhombus(int a, int A, int B) : Quadrangle(a, a, a, a, A, B, A, B) {
-		Quadrangle::set_name(name);
-	};
+	Rhombus(int a, int A, int B) : Quadrangle(a, a, a, a, A, B, A, B, "Rhombus") {};
 
 	bool check() override {
 		return Quadrangle::check() && (A != B);
 	}
 	~Rhombus() {};
-private:
-	std::string name = "Rhombus ";
 };
 
 
@@ -189,12 +156,12 @@ int main()
 	system("chcp 1251");
 	setlocale(LC_ALL, "Russian");
 
-	Figure figure;
+	Figure figure("Figure");
 	figure.print_info();
 
 	RightTriangle rightTriangle(10, 20, 30, 50, 40);
 	IsoscelesTriangle isoscelesTriangle(50, 40, 50, 80);
-	Triangle triangle(3, 3, 3, 90, 60, 40);
+	Triangle triangle(3, 3, 3, 90, 60, 40, "Triangle");
 	Square square(20);
 	Rhombus rhombus(30, 60, 120);
 
