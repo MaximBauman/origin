@@ -1,120 +1,17 @@
 #include <iostream>
 #include "Basic.h"
+#include "Triangle.h"
+#include "Quadrangle.h"
+#include "RightTriangle.h"
+#include "IsoscelesTriangle.h"
+#include "EquilateralTriangle.h"
+#include "Rectangle.h"
+#include "Square.h"
+#include "Parallelogram.h"
+#include  "Rhombus.h"
 
+void print_info(Basic* figure);
 
-class Triangle : public Basic
-{
-public:
-    Triangle(int a, int b, int c, int A, int B, int C, std::string name) : Basic(name), a{ a }, b{ b }, c{ c }, A{ A }, B{ B }, C{ C } {};
-
-    void print_info() override {
-        std::cout << Basic::get_name() << std::endl;
-        std::cout << "Sides: a=" << a << " b=" << b << " c=" << c << std::endl;
-        std::cout << "Corners: A=" << A << " B=" << B << " C=" << C << std::endl;
-        std::cout << std::endl;
-    }
-
-    ~Triangle() {};
-private:
-    int a, b, c, A, B, C;
-};
-
-
-class Quadrangle : public Basic {
-public:
-
-    Quadrangle(int a, int b, int c, int d, int A, int B, int C, int D, std::string name) : Basic(name), a{ a }, b{ b }, c{ c }, d{ d }, A{ A }, B{ B }, C{ C }, D{ D } {
-
-    };
-
-    void print_info() override {
-        std::cout << Basic::get_name() << std::endl;
-        std::cout << "Sides: a=" << a << " b=" << b << " c=" << c << " d=" << d << std::endl;
-        std::cout << "Corners: A=" << A << " B=" << B << " C=" << C << " D=" << D << std::endl;
-        std::cout << std::endl;
-
-    }
-
-    ~Quadrangle() {};
-private:
-    int a, b, c, d, A, B, C, D;
-
-};
-
-class RightTriangle : public Triangle
-{
-
-public:
-    RightTriangle(int a, int b, int c, int A, int B) : Triangle(a, b, c, A, B, 90, "Right triangle") {
-    }
-    ~RightTriangle() {};
-};
-
-class IsoscelesTriangle : public Triangle //равнобедренный
-{
-public:
-    IsoscelesTriangle(int a, int b, int A, int B) : Triangle(a, b, a, A, B, A, "Isosceles triangle: ") {
-    };
-    ~IsoscelesTriangle() {};
-};
-
-class EquilateralTriangle : public Triangle //равносторонний
-{
-public:
-    EquilateralTriangle(int a) : Triangle(a, a, a, 60, 60, 60, "Equilateral triangle: ") {
-    };
-    ~EquilateralTriangle() {};
-};
-
-
-class Rectangle : public Quadrangle //прямоугольник
-{
-public:
-    Rectangle(int a, int b) : Quadrangle(a, b, a, b, 90, 90, 90, 90, "Rectangle") {
-    };
-    ~Rectangle() {};
-
-};
-
-class Square : public Quadrangle
-{
-public:
-    Square(int a) : Quadrangle(a, a, a, a, 90, 90, 90, 90, "Square") {
-
-    };
-    ~Square() {};
-
-private:
-
-};
-
-class Parallelogram : public Quadrangle
-{
-public:
-    Parallelogram(int a, int b, int A, int B) : Quadrangle(a, b, a, b, A, B, A, B, "Parallelogram") {
-
-    };
-    ~Parallelogram() {};
-
-private:
-
-};
-
-class Rhombus : public Quadrangle
-{
-public:
-    Rhombus(int a, int A, int B) : Quadrangle(a, a, a, a, A, B, A, B, "Rhombus") {
-
-    };
-    ~Rhombus() {};
-
-private:
-
-};
-
-void print_info(Basic* figure) {
-    figure->print_info();
-}
 int main()
 {
     system("chcp 1251");
@@ -130,7 +27,6 @@ int main()
     Parallelogram parallelogram(20, 30, 30, 40);
     Rhombus rhombus(30, 30, 40);
 
-
     print_info(&triangle);
     print_info(&rightTriangle);
     print_info(&isoscelesTriangle);
@@ -141,9 +37,9 @@ int main()
     print_info(&parallelogram);
     print_info(&rhombus);
 
-
-
     return 0;
 }
 
-
+void print_info(Basic* figure) {
+    figure->print_info();
+}
