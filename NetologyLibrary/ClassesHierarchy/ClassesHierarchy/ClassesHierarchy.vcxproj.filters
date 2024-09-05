@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
@@ -16,6 +16,33 @@
     <Filter Include="Source Files\Basic">
       <UniqueIdentifier>{4e201281-905f-4aba-b326-489c87dba39e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Triangle">
+      <UniqueIdentifier>{e02f1eb8-7a8d-4272-837f-d983e0d7f2a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Quadrangle">
+      <UniqueIdentifier>{7fb4da53-8a7b-4b63-b0ef-eff2f5f82f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RightTriangle">
+      <UniqueIdentifier>{4375addf-45d1-43b9-a0c1-b47a1aee5129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IsoscelesTriangle">
+      <UniqueIdentifier>{e705b08b-bbc2-47eb-896c-c35150bd5f71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EquilateralTriangle">
+      <UniqueIdentifier>{da857cf8-79c3-4a42-b26c-f973e3da012a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Rectangle">
+      <UniqueIdentifier>{e0d7053b-6f7f-421e-9a0c-c2e52a8a4e6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Square">
+      <UniqueIdentifier>{93689bd8-c098-435b-a9ab-a5727ec542c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Parallelogram">
+      <UniqueIdentifier>{744fe147-e35c-4d8e-b07b-31866eda1520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Rhombus">
+      <UniqueIdentifier>{f29bfd95-478b-49ff-83d3-719b8850553b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClassesHierarchy.cpp">
@@ -24,10 +51,64 @@
     <ClCompile Include="Basic.cpp">
       <Filter>Source Files\Basic</Filter>
     </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Source Files\Triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="Quadrangle.cpp">
+      <Filter>Source Files\Quadrangle</Filter>
+    </ClCompile>
+    <ClCompile Include="RightTriangle.cpp">
+      <Filter>Source Files\RightTriangle</Filter>
+    </ClCompile>
+    <ClCompile Include="IsoscelesTriangle.cpp">
+      <Filter>Source Files\IsoscelesTriangle</Filter>
+    </ClCompile>
+    <ClCompile Include="EquilateralTriangle.cpp">
+      <Filter>Source Files\EquilateralTriangle</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Source Files\Rectangle</Filter>
+    </ClCompile>
+    <ClCompile Include="Square.cpp">
+      <Filter>Source Files\Square</Filter>
+    </ClCompile>
+    <ClCompile Include="Parallelogram.cpp">
+      <Filter>Source Files\Parallelogram</Filter>
+    </ClCompile>
+    <ClCompile Include="Rhombus.cpp">
+      <Filter>Source Files\Rhombus</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Basic.h">
       <Filter>Source Files\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Source Files\Triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Quadrangle.h">
+      <Filter>Source Files\Quadrangle</Filter>
+    </ClInclude>
+    <ClInclude Include="RightTriangle.h">
+      <Filter>Source Files\RightTriangle</Filter>
+    </ClInclude>
+    <ClInclude Include="IsoscelesTriangle.h">
+      <Filter>Source Files\IsoscelesTriangle</Filter>
+    </ClInclude>
+    <ClInclude Include="EquilateralTriangle.h">
+      <Filter>Source Files\EquilateralTriangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Source Files\Rectangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Square.h">
+      <Filter>Source Files\Square</Filter>
+    </ClInclude>
+    <ClInclude Include="Parallelogram.h">
+      <Filter>Source Files\Parallelogram</Filter>
+    </ClInclude>
+    <ClInclude Include="Rhombus.h">
+      <Filter>Source Files\Rhombus</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
