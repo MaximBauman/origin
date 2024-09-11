@@ -130,10 +130,30 @@
     <ClCompile Include="CornersSidesExceptions.cpp" />
     <ClCompile Include="MyExceptionQuadrangle.cpp" />
     <ClCompile Include="MyExceptionTriangle.cpp" />
+<ClCompile Include="Basic.cpp" />
+    <ClCompile Include="EquilateralTriangle.cpp" />
+    <ClCompile Include="IsoscelesTriangle.cpp" />
+    <ClCompile Include="Parallelogram.cpp" />
+    <ClCompile Include="Quadrangle.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="Rhombus.cpp" />
+    <ClCompile Include="RightTriangle.cpp" />
+    <ClCompile Include="Square.cpp" />
+    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyExceptionQuadrangle.h" />
     <ClInclude Include="MyExceptionTriangle.h" />
+  <ClInclude Include="Basic.h" />
+    <ClInclude Include="EquilateralTriangle.h" />
+    <ClInclude Include="IsoscelesTriangle.h" />
+    <ClInclude Include="Parallelogram.h" />
+    <ClInclude Include="Quadrangle.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Rhombus.h" />
+    <ClInclude Include="RightTriangle.h" />
+    <ClInclude Include="Square.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
