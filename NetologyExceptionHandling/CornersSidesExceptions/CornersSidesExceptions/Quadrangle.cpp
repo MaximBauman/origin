@@ -6,9 +6,6 @@ Quadrangle::Quadrangle(int a, int b, int c, int d, int A, int B, int C, int D, s
     if (A + B + C + D != 360 || (A == 0 || B == 0 || C == 0 || D == 0)) {
         throw MyExceptionQuadrangle();
     }
-    else {
-        continue;
-    }
 };
 void Quadrangle::print_info() {
     std::cout << Basic::get_name() << " ";

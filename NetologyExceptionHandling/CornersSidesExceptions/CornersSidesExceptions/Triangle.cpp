@@ -6,9 +6,6 @@ Triangle::Triangle(int a, int b, int c, int A, int B, int C, std::string name) :
     if (A + B + C != 180 || (A == 0 || B == 0 || C == 0)) {
         throw MyExceptionTriangle();
     }
-    else {
-        continue;
-    }
 };
 
 

@@ -14,29 +14,38 @@
 
 void print_info(Basic* figure);
 
+void recuirseCall();
+
 int main()
 {
     system("chcp 1251");
     setlocale(LC_ALL, "Russian");
+
+    
+    recuirseCall();
+
+    return 0;
+}
+
+void recuirseCall() {
     try {
         Triangle triangle(10, 20, 30, 50, 60, 70, "Triangle");
-        RightTriangle rightTriangle(10, 20, 30, 50, 60);
-        IsoscelesTriangle isoscelesTriangle(10, 20, 50, 60);
-        EquilateralTriangle equilateralTriangle(30);
-        Quadrangle quadrangle(10, 20, 30, 40, 50, 60, 70, 80, "Quadrangle");
-        Rectangle rectangle(10, 20);
-        Square square(20);
-        Parallelogram parallelogram(20, 30, 30, 40);
-        Rhombus rhombus(30, 30, 40);
-
         print_info(&triangle);
+        RightTriangle rightTriangle(10, 20, 30, 50, 40);
         print_info(&rightTriangle);
+        IsoscelesTriangle isoscelesTriangle(10, 20, 50, 80);
         print_info(&isoscelesTriangle);
+        EquilateralTriangle equilateralTriangle(30);
         print_info(&equilateralTriangle);
+        Quadrangle quadrangle(10, 20, 30, 40, 100, 60, 90, 110, "Quadrangle");
         print_info(&quadrangle);
+        Rectangle rectangle(10, 20);
         print_info(&rectangle);
+        Square square(20);
         print_info(&square);
+        Parallelogram parallelogram(20, 30, 30, 40);
         print_info(&parallelogram);
+        Rhombus rhombus(30, 30, 40);
         print_info(&rhombus);
     }
     catch (MyExceptionTriangle& exTriangle) {
@@ -48,9 +57,7 @@ int main()
     catch (...) {
         std::cout << "Something is wrong :( True again later" << std::endl;
     }
-
-
-    return 0;
+    
 }
 
 void print_info(Basic* figure) {
