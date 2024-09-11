@@ -17,6 +17,7 @@ int function(std::string str, int forbidden_length) {
 };
 
 
+
 int main()
 {
     int length = 3;
@@ -35,6 +36,9 @@ int main()
         catch (MyException& ex) {
             std::cout << "Wrong length!" << std::endl;
             break;
+        }
+        catch (...) {
+            std::cout << "something wrong!" << std::endl;
         }
     }
     
