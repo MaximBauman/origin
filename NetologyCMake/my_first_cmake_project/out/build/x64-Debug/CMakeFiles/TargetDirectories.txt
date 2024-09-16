@@ -1,0 +1,3 @@
+C:/Users/m.bauman/Desktop/NetologyHomeWorks/NetologyCMake/my_first_cmake_project/out/build/x64-Debug/CMakeFiles/name_input.dir
+C:/Users/m.bauman/Desktop/NetologyHomeWorks/NetologyCMake/my_first_cmake_project/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/m.bauman/Desktop/NetologyHomeWorks/NetologyCMake/my_first_cmake_project/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
