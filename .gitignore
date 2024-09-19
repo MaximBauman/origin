@@ -9,3 +9,8 @@
 *.pdb
 *.exe
 *.pdb
+*.ninja_deps
+*.ninja_log
+CMakeCache.txt
+VSInheritEnvironments.txt
+build.ninja

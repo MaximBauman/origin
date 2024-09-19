@@ -1,4 +1,3 @@
-C:/Users/m.bauman/Desktop/NetologyHomeWorks/NetologyCMake/figuresCMake/out/build/x64-Debug/CMakeFiles/src_files.dir
 C:/Users/m.bauman/Desktop/NetologyHomeWorks/NetologyCMake/figuresCMake/out/build/x64-Debug/CMakeFiles/figures_cmake.dir
 C:/Users/m.bauman/Desktop/NetologyHomeWorks/NetologyCMake/figuresCMake/out/build/x64-Debug/CMakeFiles/edit_cache.dir
 C:/Users/m.bauman/Desktop/NetologyHomeWorks/NetologyCMake/figuresCMake/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

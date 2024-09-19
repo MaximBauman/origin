@@ -41,112 +41,85 @@ include CMakeFiles\rules.ninja
 
 cmake_ninja_workdir = C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\out\build\x64-Debug\
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target src_files
-
-
-#############################################
-# Order-only phony target for src_files
-
-build cmake_object_order_depends_target_src_files: phony || CMakeFiles\src_files.dir
-
-build CMakeFiles\src_files.dir\Basic.cpp.obj: CXX_COMPILER__src_files_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\Basic.cpp || cmake_object_order_depends_target_src_files
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\src_files.dir
-  OBJECT_FILE_DIR = CMakeFiles\src_files.dir
-  TARGET_COMPILE_PDB = CMakeFiles\src_files.dir\src_files.pdb
-  TARGET_PDB = src_files.pdb
-
-build CMakeFiles\src_files.dir\EquilateralTriangle.cpp.obj: CXX_COMPILER__src_files_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\EquilateralTriangle.cpp || cmake_object_order_depends_target_src_files
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\src_files.dir
-  OBJECT_FILE_DIR = CMakeFiles\src_files.dir
-  TARGET_COMPILE_PDB = CMakeFiles\src_files.dir\src_files.pdb
-  TARGET_PDB = src_files.pdb
-
-build CMakeFiles\src_files.dir\IsoscelesTriangle.cpp.obj: CXX_COMPILER__src_files_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\IsoscelesTriangle.cpp || cmake_object_order_depends_target_src_files
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\src_files.dir
-  OBJECT_FILE_DIR = CMakeFiles\src_files.dir
-  TARGET_COMPILE_PDB = CMakeFiles\src_files.dir\src_files.pdb
-  TARGET_PDB = src_files.pdb
-
-build CMakeFiles\src_files.dir\Parallelogram.cpp.obj: CXX_COMPILER__src_files_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\Parallelogram.cpp || cmake_object_order_depends_target_src_files
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\src_files.dir
-  OBJECT_FILE_DIR = CMakeFiles\src_files.dir
-  TARGET_COMPILE_PDB = CMakeFiles\src_files.dir\src_files.pdb
-  TARGET_PDB = src_files.pdb
-
-build CMakeFiles\src_files.dir\Quadrangle.cpp.obj: CXX_COMPILER__src_files_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\Quadrangle.cpp || cmake_object_order_depends_target_src_files
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\src_files.dir
-  OBJECT_FILE_DIR = CMakeFiles\src_files.dir
-  TARGET_COMPILE_PDB = CMakeFiles\src_files.dir\src_files.pdb
-  TARGET_PDB = src_files.pdb
-
-build CMakeFiles\src_files.dir\Rectangle.cpp.obj: CXX_COMPILER__src_files_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\Rectangle.cpp || cmake_object_order_depends_target_src_files
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\src_files.dir
-  OBJECT_FILE_DIR = CMakeFiles\src_files.dir
-  TARGET_COMPILE_PDB = CMakeFiles\src_files.dir\src_files.pdb
-  TARGET_PDB = src_files.pdb
-
-build CMakeFiles\src_files.dir\Rhombus.cpp.obj: CXX_COMPILER__src_files_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\Rhombus.cpp || cmake_object_order_depends_target_src_files
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\src_files.dir
-  OBJECT_FILE_DIR = CMakeFiles\src_files.dir
-  TARGET_COMPILE_PDB = CMakeFiles\src_files.dir\src_files.pdb
-  TARGET_PDB = src_files.pdb
-
-build CMakeFiles\src_files.dir\RightTriangle.cpp.obj: CXX_COMPILER__src_files_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\RightTriangle.cpp || cmake_object_order_depends_target_src_files
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\src_files.dir
-  OBJECT_FILE_DIR = CMakeFiles\src_files.dir
-  TARGET_COMPILE_PDB = CMakeFiles\src_files.dir\src_files.pdb
-  TARGET_PDB = src_files.pdb
-
-build CMakeFiles\src_files.dir\Square.cpp.obj: CXX_COMPILER__src_files_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\Square.cpp || cmake_object_order_depends_target_src_files
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\src_files.dir
-  OBJECT_FILE_DIR = CMakeFiles\src_files.dir
-  TARGET_COMPILE_PDB = CMakeFiles\src_files.dir\src_files.pdb
-  TARGET_PDB = src_files.pdb
-
-build CMakeFiles\src_files.dir\Triangle.cpp.obj: CXX_COMPILER__src_files_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\Triangle.cpp || cmake_object_order_depends_target_src_files
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\src_files.dir
-  OBJECT_FILE_DIR = CMakeFiles\src_files.dir
-  TARGET_COMPILE_PDB = CMakeFiles\src_files.dir\src_files.pdb
-  TARGET_PDB = src_files.pdb
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target src_files
-
-
-#############################################
-# Link the static library src_files.lib
-
-build src_files.lib: CXX_STATIC_LIBRARY_LINKER__src_files_Debug CMakeFiles\src_files.dir\Basic.cpp.obj CMakeFiles\src_files.dir\EquilateralTriangle.cpp.obj CMakeFiles\src_files.dir\IsoscelesTriangle.cpp.obj CMakeFiles\src_files.dir\Parallelogram.cpp.obj CMakeFiles\src_files.dir\Quadrangle.cpp.obj CMakeFiles\src_files.dir\Rectangle.cpp.obj CMakeFiles\src_files.dir\Rhombus.cpp.obj CMakeFiles\src_files.dir\RightTriangle.cpp.obj CMakeFiles\src_files.dir\Square.cpp.obj CMakeFiles\src_files.dir\Triangle.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  LINK_FLAGS = /machine:x64
-  OBJECT_DIR = CMakeFiles\src_files.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\src_files.dir\src_files.pdb
-  TARGET_FILE = src_files.lib
-  TARGET_PDB = src_files.pdb
-
-# =============================================================================
 # Object build statements for EXECUTABLE target figures_cmake
 
 
 #############################################
 # Order-only phony target for figures_cmake
 
-build cmake_object_order_depends_target_figures_cmake: phony || cmake_object_order_depends_target_src_files
+build cmake_object_order_depends_target_figures_cmake: phony || CMakeFiles\figures_cmake.dir
 
 build CMakeFiles\figures_cmake.dir\ClassesHierarchy.cpp.obj: CXX_COMPILER__figures_cmake_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\ClassesHierarchy.cpp || cmake_object_order_depends_target_figures_cmake
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\figures_cmake.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures_cmake.dir
+  TARGET_COMPILE_PDB = CMakeFiles\figures_cmake.dir\
+  TARGET_PDB = figures_cmake.pdb
+
+build CMakeFiles\figures_cmake.dir\Basic.cpp.obj: CXX_COMPILER__figures_cmake_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\Basic.cpp || cmake_object_order_depends_target_figures_cmake
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\figures_cmake.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures_cmake.dir
+  TARGET_COMPILE_PDB = CMakeFiles\figures_cmake.dir\
+  TARGET_PDB = figures_cmake.pdb
+
+build CMakeFiles\figures_cmake.dir\Triangle.cpp.obj: CXX_COMPILER__figures_cmake_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\Triangle.cpp || cmake_object_order_depends_target_figures_cmake
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\figures_cmake.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures_cmake.dir
+  TARGET_COMPILE_PDB = CMakeFiles\figures_cmake.dir\
+  TARGET_PDB = figures_cmake.pdb
+
+build CMakeFiles\figures_cmake.dir\Quadrangle.cpp.obj: CXX_COMPILER__figures_cmake_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\Quadrangle.cpp || cmake_object_order_depends_target_figures_cmake
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\figures_cmake.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures_cmake.dir
+  TARGET_COMPILE_PDB = CMakeFiles\figures_cmake.dir\
+  TARGET_PDB = figures_cmake.pdb
+
+build CMakeFiles\figures_cmake.dir\EquilateralTriangle.cpp.obj: CXX_COMPILER__figures_cmake_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\EquilateralTriangle.cpp || cmake_object_order_depends_target_figures_cmake
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\figures_cmake.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures_cmake.dir
+  TARGET_COMPILE_PDB = CMakeFiles\figures_cmake.dir\
+  TARGET_PDB = figures_cmake.pdb
+
+build CMakeFiles\figures_cmake.dir\IsoscelesTriangle.cpp.obj: CXX_COMPILER__figures_cmake_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\IsoscelesTriangle.cpp || cmake_object_order_depends_target_figures_cmake
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\figures_cmake.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures_cmake.dir
+  TARGET_COMPILE_PDB = CMakeFiles\figures_cmake.dir\
+  TARGET_PDB = figures_cmake.pdb
+
+build CMakeFiles\figures_cmake.dir\Rectangle.cpp.obj: CXX_COMPILER__figures_cmake_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\Rectangle.cpp || cmake_object_order_depends_target_figures_cmake
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\figures_cmake.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures_cmake.dir
+  TARGET_COMPILE_PDB = CMakeFiles\figures_cmake.dir\
+  TARGET_PDB = figures_cmake.pdb
+
+build CMakeFiles\figures_cmake.dir\Parallelogram.cpp.obj: CXX_COMPILER__figures_cmake_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\Parallelogram.cpp || cmake_object_order_depends_target_figures_cmake
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\figures_cmake.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures_cmake.dir
+  TARGET_COMPILE_PDB = CMakeFiles\figures_cmake.dir\
+  TARGET_PDB = figures_cmake.pdb
+
+build CMakeFiles\figures_cmake.dir\Rhombus.cpp.obj: CXX_COMPILER__figures_cmake_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\Rhombus.cpp || cmake_object_order_depends_target_figures_cmake
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\figures_cmake.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures_cmake.dir
+  TARGET_COMPILE_PDB = CMakeFiles\figures_cmake.dir\
+  TARGET_PDB = figures_cmake.pdb
+
+build CMakeFiles\figures_cmake.dir\RightTriangle.cpp.obj: CXX_COMPILER__figures_cmake_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\RightTriangle.cpp || cmake_object_order_depends_target_figures_cmake
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\figures_cmake.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures_cmake.dir
+  TARGET_COMPILE_PDB = CMakeFiles\figures_cmake.dir\
+  TARGET_PDB = figures_cmake.pdb
+
+build CMakeFiles\figures_cmake.dir\Square.cpp.obj: CXX_COMPILER__figures_cmake_unscanned_Debug C$:\Users\m.bauman\Desktop\NetologyHomeWorks\NetologyCMake\figuresCMake\Square.cpp || cmake_object_order_depends_target_figures_cmake
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
   OBJECT_DIR = CMakeFiles\figures_cmake.dir
   OBJECT_FILE_DIR = CMakeFiles\figures_cmake.dir
@@ -161,10 +134,10 @@ build CMakeFiles\figures_cmake.dir\ClassesHierarchy.cpp.obj: CXX_COMPILER__figur
 #############################################
 # Link the executable figures_cmake.exe
 
-build figures_cmake.exe: CXX_EXECUTABLE_LINKER__figures_cmake_Debug CMakeFiles\figures_cmake.dir\ClassesHierarchy.cpp.obj | src_files.lib || src_files.lib
+build figures_cmake.exe: CXX_EXECUTABLE_LINKER__figures_cmake_Debug CMakeFiles\figures_cmake.dir\ClassesHierarchy.cpp.obj CMakeFiles\figures_cmake.dir\Basic.cpp.obj CMakeFiles\figures_cmake.dir\Triangle.cpp.obj CMakeFiles\figures_cmake.dir\Quadrangle.cpp.obj CMakeFiles\figures_cmake.dir\EquilateralTriangle.cpp.obj CMakeFiles\figures_cmake.dir\IsoscelesTriangle.cpp.obj CMakeFiles\figures_cmake.dir\Rectangle.cpp.obj CMakeFiles\figures_cmake.dir\Parallelogram.cpp.obj CMakeFiles\figures_cmake.dir\Rhombus.cpp.obj CMakeFiles\figures_cmake.dir\RightTriangle.cpp.obj CMakeFiles\figures_cmake.dir\Square.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = src_files.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\figures_cmake.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -201,8 +174,6 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 build figures_cmake: phony figures_cmake.exe
 
-build src_files: phony src_files.lib
-
 # =============================================================================
 # Folder targets.
 
@@ -211,7 +182,7 @@ build src_files: phony src_files.lib
 #############################################
 # Folder: C:/Users/m.bauman/Desktop/NetologyHomeWorks/NetologyCMake/figuresCMake/out/build/x64-Debug
 
-build all: phony src_files.lib figures_cmake.exe
+build all: phony figures_cmake.exe
 
 # =============================================================================
 # Built-in targets
