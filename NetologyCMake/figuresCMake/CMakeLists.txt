@@ -14,6 +14,7 @@ set(SOURCES
 	RightTriangle.cpp
 	Square.cpp
 )
+
 set(HEADERS
 	Basic.h
 	Triangle.h
