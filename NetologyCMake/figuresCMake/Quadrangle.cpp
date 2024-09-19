@@ -8,5 +8,6 @@ void Quadrangle::print_info() {
     std::cout << "Corners: A=" << A << " B=" << B << " C=" << C << " D=" << D << std::endl;
     std::cout << std::endl;
 };
+
 Quadrangle::~Quadrangle() {};
 
