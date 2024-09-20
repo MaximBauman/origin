@@ -60,10 +60,6 @@
 				{
 					"backtrace" : 3,
 					"path" : "C:/Users/m.bauman/Desktop/NetologyHomeWorks/NetologyStaticDynamicLibraries/DynamicCmake/app/../library"
-				},
-				{
-					"backtrace" : 3,
-					"path" : "C:/Users/m.bauman/Desktop/NetologyHomeWorks/NetologyStaticDynamicLibraries/DynamicCmake/app/Leaver.dll"
 				}
 			],
 			"language" : "CXX",

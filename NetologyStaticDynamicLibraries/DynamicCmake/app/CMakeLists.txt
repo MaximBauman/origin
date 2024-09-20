@@ -5,7 +5,7 @@ project(MyApp)
 add_executable(MyApp GoodbyeSol.cpp)
 
 # ”кажите путь к библиотеке
-include_directories(../library Leaver.dll)
+include_directories(../library)
 
 # —в€зываем приложение с библиотекой
 target_link_libraries(MyApp PRIVATE Leaver)
