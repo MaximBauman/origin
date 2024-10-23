@@ -18,11 +18,38 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\source\repos\DraftRacingSimulator\AirTransport.h" />
+    <ClInclude Include="..\..\..\..\source\repos\DraftRacingSimulator\Boots.h" />
+    <ClInclude Include="..\..\..\..\source\repos\DraftRacingSimulator\Broom.h" />
+    <ClInclude Include="..\..\..\..\source\repos\DraftRacingSimulator\Camel.h" />
+    <ClInclude Include="..\..\..\..\source\repos\DraftRacingSimulator\Carpet.h" />
+    <ClInclude Include="..\..\..\..\source\repos\DraftRacingSimulator\Eagle.h" />
+    <ClInclude Include="..\..\..\..\source\repos\DraftRacingSimulator\FastestCamel.h" />
+    <ClInclude Include="..\..\..\..\source\repos\DraftRacingSimulator\GameInteraction.h" />
+    <ClInclude Include="..\..\..\..\source\repos\DraftRacingSimulator\GroundTransport.h" />
+    <ClInclude Include="..\..\..\..\source\repos\DraftRacingSimulator\Kentaur.h" />
+    <ClInclude Include="..\..\..\..\source\repos\DraftRacingSimulator\Race.h" />
+    <ClInclude Include="..\..\..\..\source\repos\DraftRacingSimulator\Transport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\source\repos\DraftRacingSimulator\AirTransport.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\DraftRacingSimulator\Boots.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\DraftRacingSimulator\Broom.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\DraftRacingSimulator\Camel.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\DraftRacingSimulator\Carpet.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\DraftRacingSimulator\Eagle.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\DraftRacingSimulator\FastestCamel.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\DraftRacingSimulator\GameInteraction.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\DraftRacingSimulator\GroundTransport.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\DraftRacingSimulator\Kentaur.cpp" />
+    <ClCompile Include="..\..\..\..\source\repos\DraftRacingSimulator\Race.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{88b3b983-61da-40c0-8584-ff6d4364d800}</ProjectGuid>
-    <RootNamespace>library</RootNamespace>
+    <ProjectGuid>{fd3eedc8-9d54-4118-ac88-65bc42fd02ec}</ProjectGuid>
+    <RootNamespace>dynamicLib</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -74,7 +101,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;LIBRARY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DYNAMICLIB_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -89,7 +116,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;LIBRARY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;DYNAMICLIB_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -104,8 +131,9 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;LIBRARY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;DYNAMICLIB_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)dynamicLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -119,8 +147,9 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;LIBRARY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;DYNAMICLIB_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)dynamicLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -130,12 +159,6 @@
       <EnableUAC>false</EnableUAC>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="GroundVenchles.h" />
-    <ClInclude Include="GroundRace.h" />
-    <ClInclude Include="RaceType.h" />
-    <ClInclude Include="Transport.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
