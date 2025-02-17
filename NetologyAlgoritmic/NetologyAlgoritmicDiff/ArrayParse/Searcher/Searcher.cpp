@@ -3,8 +3,8 @@
 void printer(int* arr, int size) {
 	for (int i = 0; i < size; i++) {
 		std::cout << arr[i] << " ";
-		std::cout << std::endl;
 	}
+	std::cout << std::endl;
 }
 
 
@@ -38,7 +38,7 @@ int main()
 		}
 	}
 
-	std::cout << "counter = " << n - 1 - right;
+	std::cout << "counter = " << n - right;
 
 	return 0;
 }
