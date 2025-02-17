@@ -1,5 +1,7 @@
 #include <iostream>
 
+//Algorithmic memory O(n), time O(2^n) 
+
 int fibo(int n);
 
 int main()
