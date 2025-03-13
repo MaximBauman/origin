@@ -22,6 +22,7 @@ int main()
     array_printer(array, size);
     print_pyramid(array, size);
 
+    delete[] array;
     return 0;
 }
 
