@@ -21,7 +21,6 @@ int main() {
 		}
 	} while (word != "exit");
 
-
 	return 0;
 }
 
