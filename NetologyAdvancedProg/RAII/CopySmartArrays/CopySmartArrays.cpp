@@ -2,10 +2,11 @@
 
 class Smart_Array {
 public:
-    Smart_Array(int size){
+    Smart_Array(int size) {
         this->size = size;
         arr = new int[size];
     }
+
     void add_element(int element) {
         if (position != size) {
             arr[position] = element;
@@ -24,13 +25,22 @@ public:
             return arr[index];
         }
     }
-    void printer() {
-        for (int i = 0; i < size; i++) {
-            std::cout << arr[i];
+
+    Smart_Array& operator=(const Smart_Array& other) {
+        if (this != &other) {
+            delete[] arr;
+            size = other.size;
+            position = other.position;
+            arr = new int[size];
+            for (int i = 0; i < position; i++) {
+                arr[i] = other.arr[i];
+            }
         }
-        std::cout << std::endl;
+        return *this;
     }
-private: 
+
+
+private:
     int size = 0;
     int position = 0;
     int* arr = nullptr;
@@ -52,16 +62,16 @@ int main()
         arr.add_element(1);
         arr.add_element(4);
         arr.add_element(155);
-        arr.add_element(14);
-        arr.add_element(15);
-        arr.add_element(69);
-        std::cout << arr.get_element(1) << std::endl;
-        std::cout << arr.get_element(13) << std::endl;
+
+        Smart_Array new_arr(2);
+        new_arr.add_element(44);
+        new_arr.add_element(34);
+        
+        arr = new_arr;
     }
     catch (const std::exception& ex) {
         std::cout << ex.what() << std::endl;
     }
-
     return 0;
 }
 
