@@ -1,5 +1,5 @@
-#include "catch_amalgamated.hpp"
 #include <iostream>
+#include "catch_amalgamated.hpp"
 
 struct ListNode
 {
@@ -94,29 +94,41 @@ private:
     unsigned long m_size;
 };
 
-TEST_CASE("doubly_linked", "[linked list]") {
+TEST_CASE("test function's", "[Callback's ]") {
     List new_list;
-    SECTION("Empty function") {
-        INFO("Empty function");
-        CHECK(new_list.Empty() == true);
+
+
+    SECTION("Back functions test's") {
+        new_list.PushBack(0);
+        new_list.PushBack(230);
+        INFO("PUSHBACK TEST");
+        CHECK(new_list.Size() == 2);
+        INFO("POPBACK TEST");
+        CHECK(new_list.PopBack() == 230);
+        CHECK(new_list.PopBack() == 0);
 
     }
-    SECTION("Size function") {
-        new_list.PushFront(12);
-        new_list.PushBack(21);
-        INFO("Size function");
+    SECTION("Front functions test's") {
+        new_list.PushFront(323);
+        new_list.PushFront(21);
+        INFO("PUSHFRONT TEST");
         CHECK(new_list.Size() == 2);
- 
+        INFO("POPFRONT TEST");
+        CHECK(new_list.PopFront() == 21);
+        CHECK(new_list.PopFront() == 323);
     }
-    SECTION("Clear function") {
-        new_list.Clear();
-        INFO("Clear func");
-        CHECK(new_list.Empty() == true);
+    SECTION("Pop functions, clear list") {
+        try {
+            new_list.PopBack();
+            new_list.PopFront();
+        }
+        catch (const std::runtime_error& ex) {
+            CHECK(std::string(ex.what()) == "list is empty");
+        }
     }
+
 }
 
 int main(int argc, char* argv[]) {
-    
     return Catch::Session().run(argc, argv);
 }
-
