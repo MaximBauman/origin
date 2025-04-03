@@ -15,15 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Test_push_get_functions.cpp">
+    <ClCompile Include="my_list.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="catch_amalgamated.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Unit_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="catch_amalgamated.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_list.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
