@@ -7,7 +7,7 @@ T squaring(T a) {
 }
 template< typename T2>
 void vector_squaring(std::vector<T2>& vec) {
-	for (size_t i = 0; i < vec.size(); i++) {
+	for (auto i = 0; i < vec.size(); i++) {
 		std::cout << vec[i] * vec[i] << " ";
 	}
 	std::cout << std::endl;
@@ -32,11 +32,16 @@ int main()
 				if (input != -999) {
 					numbers.push_back(input);
 				}
+				else {
+					input = 0; 
+					break;
+				}
 				
 			};
 			vector_squaring(numbers);
 		}
 		else { continue; }
+		
 	} while (input != -999);
 
 	return 0;
