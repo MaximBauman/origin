@@ -36,6 +36,15 @@ public:
 
 int main()
 {
+    //
+    //Table table(2, 3); 
+    //std::cout << table.Size() << std::endl;
+    //table[1][2] = 10;
+    //table[0][0] = 4;
+    //std::cout << table[0][0] << " ";
+    //std::cout << table[1][2] << " " << std::endl;
+
+
     Table<int, int> table(2, 3); //For C++ 17+ standart, if using earlier Table<input types> name(num1, num2);
     std::cout << table.Size() << std::endl;
     table[1][2] = 10;
