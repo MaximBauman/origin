@@ -101,7 +101,7 @@ public:
 int main()
 {
     try {
-        ini_parser parser("tst.txt");
+        ini_parser parser("test.txt");
         parser.printer();
         //auto value = parser.get_value<double>("Section1.var1");
     }
