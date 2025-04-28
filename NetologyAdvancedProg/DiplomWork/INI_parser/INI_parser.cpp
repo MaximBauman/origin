@@ -101,11 +101,11 @@ public:
 int main()
 {
     try {
-        ini_parser parser("test.txt");
+        ini_parser parser("tst.txt");
         parser.printer();
         //auto value = parser.get_value<double>("Section1.var1");
     }
-    catch(std::string& ex){
+    catch(std::string ex){
         std::cout << ex << std::endl;
     }
     return 0;
