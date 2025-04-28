@@ -1,0 +1,19 @@
+[Section1]
+; comment for section
+var1=5.0 ; comment for parametr
+var2=some string
+
+[Section2]
+var1=1
+var2=value_2
+
+; Sometimes values ​​are missing, this means there are no variables in Section3 
+[Section3]
+[Section4]
+Mode=
+Vid=
+
+; Sections may be repeated
+[Section1]
+var3=value
+var1=1.0 ; reassign the value
