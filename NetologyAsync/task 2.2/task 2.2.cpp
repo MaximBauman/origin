@@ -18,7 +18,7 @@ void consolePrinter(int index, int workLength, int stepDelay) {
         std::this_thread::sleep_for(std::chrono::seconds(stepDelay));
         progressBar.push_back('#');
         std::lock_guard<std::mutex> lock(m_work);
-        std::cout << "Thread " << index
+        std::cout << "Thread " << index 
             << " (id = " << id << "): [" << progressBar << "]\n";
     }
     auto finish = std::chrono::steady_clock::now();
