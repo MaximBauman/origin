@@ -3,8 +3,6 @@
 #include <chrono>
 #include <cstdlib>
 
-using namespace std;
-
 int arr1[1000000];
 int arr2[1000000];
 int result[1000000];
@@ -28,10 +26,10 @@ double runSum(int threadsCount, int size)
 {
     fillArrays(size);
 
-    thread threads[16];
+    std::thread threads[16];
     int part = size / threadsCount;
 
-    auto start = chrono::high_resolution_clock::now();
+    auto start = std::chrono::high_resolution_clock::now();
 
     for (int t = 0; t < threadsCount; t++) {
         int begin = t * part;
@@ -42,45 +40,45 @@ double runSum(int threadsCount, int size)
             end = begin + part;
 
 
-        threads[t] = thread(sumPart, begin, end);
+        threads[t] = std::thread(sumPart, begin, end);
     }
 
     for (int t = 0; t < threadsCount; t++) {
         threads[t].join();
     }
 
-    auto finish = chrono::high_resolution_clock::now();
-    chrono::duration<double> elapsed = finish - start;
+    auto finish = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> elapsed = finish - start;
 
     return elapsed.count();
 }
 
 int main()
 {
-    cout << "Number of hardware cores: "
-        << thread::hardware_concurrency() << "\n\n";
+    std::cout << "Number of hardware cores: "
+        << std::thread::hardware_concurrency() << "\n\n";
 
     int sizes[4] = { 1000, 10000, 100000, 1000000 };
     int threadCounts[5] = { 1, 2, 4, 8, 16 };
 
-    cout << "                  1000        10000        100000       1000000\n";
+    std::cout << "                  1000        10000        100000       1000000\n";
 
     for (int i = 0; i < 5; i++)
     {
         int t = threadCounts[i];
 
-        if (t == 1)  cout << "1 thread      ";
-        if (t == 2)  cout << "2 threads     ";
-        if (t == 4)  cout << "4 threads     ";
-        if (t == 8)  cout << "8 threads    ";
-        if (t == 16) cout << "16 threads   ";
+        if (t == 1)  std::cout << "1 thread      ";
+        if (t == 2)  std::cout << "2 threads     ";
+        if (t == 4)  std::cout << "4 threads     ";
+        if (t == 8)  std::cout << "8 threads    ";
+        if (t == 16) std::cout << "16 threads   ";
 
         for (int j = 0; j < 4; j++) {
             double time = runSum(t, sizes[j]);
-            cout << time << "s   ";
+            std::cout << time << "s   ";
         }
 
-        cout << "\n";
+        std::cout << std::endl;
     }
 
     return 0;
