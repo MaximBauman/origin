@@ -15,11 +15,10 @@ void setCursorPosition(int x, int y) {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     COORD setCursorPos = { y, x };
     SetConsoleCursorPosition(hConsole, setCursorPos);
-
 }
 
 void functionToLoadThread() {
-    int load = 1 + rand() % 100;
+    int load = rand() % 100;
     double x = 0;
 
     for (int i = 0; i < load * 1000000; i++) {
@@ -30,8 +29,8 @@ void functionToLoadThread() {
 void consolePrinter(int index, int workLength, int stepDelay) {
     auto id = std::this_thread::get_id();
     auto start = std::chrono::steady_clock::now();
-    std::string progressBar(workLength, ' ');
 
+    std::string progressBar(workLength, ' ');
     int row, colId, barStart, colTime;
     row = index + 1;
     colId = 6;
@@ -40,6 +39,7 @@ void consolePrinter(int index, int workLength, int stepDelay) {
 
     for (int i = 0; i < workLength; i++) {
         std::this_thread::sleep_for(std::chrono::milliseconds(stepDelay + rand() % 500));
+
         std::lock_guard<std::mutex> lock(m_work);
         setCursorPosition(row, colId);
         std::cout << id;
