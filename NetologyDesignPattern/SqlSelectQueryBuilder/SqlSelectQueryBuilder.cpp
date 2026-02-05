@@ -19,6 +19,8 @@ public:
         return *this;
     }
 
+    
+
     std::string QueryConstruction() {
         std::string query = " SELECT ";
         if (columns.empty()) {
@@ -39,7 +41,7 @@ public:
             query += " WHERE ";
             bool first = true;
             for (const auto& [key, value] : key_value_map) {
-                if (!first) query += " AND "; // Ставим AND ПЕРЕД всеми, кроме первого
+                if (!first) query += " AND ";
                 query += key + "=" + value;
                 first = false;
             }
@@ -62,7 +64,6 @@ int main()
 
     SqlSelectQueryBuilder query_builder;
 
-    // Цепочка вызовов (Method Chaining)
     query_builder.AddColumn("name").AddColumn("phone");
     query_builder.AddFrom("managers");
     query_builder.AddWhere("id", "1").AddWhere("name", "Max");
